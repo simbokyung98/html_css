@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 적용 우선순위 : 기본 태그 css > class 태그 css > id 태그 css -->
+    <style>
+        *{
+            color: aliceblue;
+            text-align: center;
+        }
+        div{
+            background-color:firebrick
+        }`
+        .class1{
+            background-color:darkgreen
+        }
+        #div1{
+            background-color: bisque;
+        }
+        #div2 div{
+            background-color:palevioletred
+        }
+        #div2 > div{ 
+            background-color:lightsalmon
+        }
+        #div2 .class2{
+            background-color: aquamarine;
+        }
+        #div2 > .class2{
+            background-color:blue
+        }
+        .class3{
+            background-color: cornflowerblue;
+        }
+        .class3.class4{
+            background-color:darkorchid;
+        }
+        .class3 .class5{
+            background-color: darkslategrey;
+        }
+        header, article{
+            background-color: darkcyan;
+        }
+        [type=checkbox]{
+            width: 100px;
+            height: 100px;
+        }
+        [type]:checked {
+            width: 70px;
+            height: 40px;
+        }
+        [type=radio]{
+            width: 100px;
+            height: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <div>A</div>
+    <hr/>
+    <div class="class1">B</div>
+    <hr/>
+    <div class="class1">C</div>
+    <hr/>
+    <div id="div1">D</div>
+    <hr/>
+    <div id="div2">
+        <div>E</div>
+        <div class="class2">F</div>
+        <div>G</div>
+        <div>
+            <div class="class2">I</div>
+            <div>J</div>
+        </div>
+    </div>
+    <hr/>
+    <div>H</div>
+    <hr/>
+    <hr/>
+    <p class="class3">K</p>
+    <p class="class3 class4">L</p>
+    <div class="class3">
+        LL
+        <p class="class5">N</p>
+    </div>
+    <hr/>
+    <header>
+        O
+    </header>
+    <hr/>
+    <article>
+        M
+    </article>
+    <hr>
+    <div>
+        <input type="checkbox">P
+        <input type="checkbox">Q
+        <input type="radio">R
+    </div>
+   
+</body>
+</html>

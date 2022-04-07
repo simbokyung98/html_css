@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- External css : css 를 외부에서 작성하고 link로 연결 / 장점:중복 줄일 수 있음  -->
+    <!-- Internal CSS : style 태그 내부에 작성한 css -->
+    <!-- 위에 두개는 작성된 순서대로 적용됨 (더 아래의 적용되는 것 ) -->
+    <!-- Inline CSS : html 태그 내부에 작성한 css /장점 : 직관적, 우선순위 제일 높음 -->
+    <link rel="stylesheet" href="exam01_where_css.css">
+    <style>
+        div{
+            background-color: coral;
+        }
+    </style>
+    
+</head>
+<body>
+    <div style="background-color: aqua;">  
+        content
+    </div>
+    <hr/>
+    <div>
+        content
+    </div>
+    <hr/>
+    <header>
+        content
+    </header>
+    <hr/>
+    <article>
+        content
+    </article>
+</body>
+</html>

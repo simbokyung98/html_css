@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        body{
+            padding:0;
+            margin: 0;
+        }
+        *{
+            border: 1px solid black;
+        }
+        #wrapper{
+            display: flex;
+            flex-direction: column;
+            height: 1100px;
+            align-items: center;
+        }
+        header{
+            flex-grow: 2;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+        }
+        #adv{
+            width: 100%;
+            flex-grow: 1;
+        }
+        #logo{
+            flex-grow: 4;
+            width: 1200px;  
+        }
+        #main{
+            flex-grow: 7;
+            width: 1200px;
+            display: flex;
+            flex-direction: column;
+        }
+        nav{
+            flex-grow: 1;
+            width: 1200px;
+        }
+        #mainIn{
+            flex-grow: 13;
+            width: 1200px;
+            border: 1px solid red;
+            display: flex;
+            flex-direction: row;
+        }
+        article{
+            flex-grow: 8;
+            display: flex;
+            flex-direction: column;
+        }
+        #adv2{
+            flex-grow: 2;
+        }
+        #news{
+            flex-grow: 5;
+            
+        }
+        #mage{
+            flex-grow: 2;
+        }
+        aside{
+            flex-grow: 3;
+        }
+        footer{
+            flex-grow: 1;
+            margin: 0 auto;
+            width: 1200px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <section id="adv">
+                <!-- <img src="/images/layout_img/01.png"> -->
+            </section>
+            <div id="logo">
+                <!-- <img src="/images/layout_img/02.png" width="1200px" height="200px"> -->
+            </div>
+        </header>
+        
+        <section id="main">
+            <nav>
+                <!-- <img src="/images/layout_img/03.png" width="1200px" height="50px"> -->
+            </nav>
+            <div id="mainIn">
+                <article>
+                    <div id="adv2">
+                        <!-- <img src="/images/layout_img/04.png" width="780px" height="130px"> -->
+                    </div>
+                    <div id="news">
+                        <!-- <img src="/images/layout_img/05.png" width="780px" height="400px"> -->
+                    </div>
+                    <div id="mage">
+                        <!-- <img src="/images/layout_img/06.png" width="780px" height="100px"> -->
+                    </div>
+                </article>
+                <aside>
+                    <div id="login">
+                        <!-- <img src="/images/layout_img/07.png" width="380px" height="130px"> -->
+                    </div>
+                    <div id="money">
+                        <!-- <img src="/images/layout_img/08.png" width="380px" height="50px"> -->
+                    </div>
+                    <div id="riadv1">
+                        <!-- <img src="/images/layout_img/09.png" width="380px" height="200px"> -->
+                    </div>
+                    <div  id="riadv1">
+                        <!-- <img src="/images/layout_img/10.png" width="380px" height="250px"> -->
+                    </div>
+                </aside>
+            </div>
+        </section>
+        <footer>
+            <!-- <img src="/images/layout_img/11.png" id="footimg" width="1200px" height="80px"> -->
+        </footer>
+    </div>
+</body>
+</html>

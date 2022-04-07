@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--  novalidate : form이 기본적으로 가지고 있는 유효성 검사 기능 끄기-->
+    <form action="#" method="post" novalidate>
+        <div>
+            <!-- lable for 속성 -->
+            <label for="userid">User ID : </label>
+            <input id="userid" type="text" name="userid" placeholder="이름"/>
+        </div>
+        <div>
+            <!-- lable for 속성 -->
+            <label for="userpwd">User PW : </label>
+            <input id="userpwd" type="text" name="userpwd" value="비밀번호" />
+        </div> 
+        <div>
+            <!-- checkbox[ 중복선택 가능 (name으로 구분) ] -->
+            <label>User Skill</label>
+            <input type="checkbox" name="skill" value="java" checked/>java
+            <input type="checkbox" name="skill" value="db" checked="checked"/>db
+            <input type="checkbox" name="skill" value="html"/>html
+            <input type="checkbox" name="skill" value="css"/>css
+            <input type="checkbox" name="skill" value="js"/>js
+            
+        </div> 
+        <div>
+            <!-- radio [ 중복안됨 (name으로 구분) ] -->
+            <label>User Job</label>
+            <input type="radio" name="Job" value="1" checked/>개발자
+            <input type="radio" name="Job" value="2"/>디자이너
+            <input type="radio" name="Job" value="3"/>설계자
+            
+        </div> 
+        <div>
+            <!-- date[ 기본값 날짜형식으로 지정 ] -->
+            <label>Hiredate : </label>
+            <input type="date" name="hiredate" value="2000-12-25" />
+            
+        </div> 
+        <div>
+            <!-- number [범위 설정 유효성 검사 가능]-->
+            <label>Age : </label>
+            <input type="number" name="age" min="1" max="200" />
+            
+        </div> 
+        <div>
+            <!-- email [@ 유효성 검사 기능] -->
+            <label>Email : </label>
+            <input type="email" name="useremail" />
+            
+        </div> 
+        <hr/>
+        <div>
+            <!-- 양식의 데이터를 전송(제출) -->
+            <button>제출</button>
+            <input type="submit" value="제출"/>
+            <input type="image" src="/images/submit.png" width="100" height="30"/>
+        </div>
+
+    </form>
+</body>
+</html>

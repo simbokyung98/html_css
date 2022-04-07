@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" 
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>    
+    <!-- 
+        **bootstrap
+        margin
+         - m : 전체 방향
+         - mb : 해당 방향만
+        padding
+         - p : 전체방향
+         - pb : 해당 방향만
+         **
+                      + 뒤에 숫자로 마진 정도 설정(0~5/auto) $spaser*비율
+                         -> $spaser : 기본값은 1rem(root 요소 font-size 기본값의 상대 사이즈[16px])
+             + y : 위 아래
+             + x : 왼쪽 오른쪽
+             * t b l r
+        -----------------------------------------------------------------------------------------
+        상대크기
+         - vw : viewport의 width
+         - vh : viewport의 height
+         - em : 현재 요소의 font-size의 설정값
+         - rem : root 요소의 font-size의 설정값
+
+     -->
+</head>
+<body>
+   <div class="card m-2">
+       <div class="card-header">
+           Margin & Padding
+       </div>
+
+       <div class="card-body">
+            <div class="card mb-3">
+                <div class="card-header"> Title2 </div>
+                <div class="card-body"> Content2 </div>
+            </div>
+            <div class="card">
+                <div class="card-header"> Title2 </div>
+                <div class="card-body"> Content2 </div>
+             </div>
+       </div>
+    </div>
+</body>
+</html>
